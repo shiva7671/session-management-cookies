@@ -13,7 +13,7 @@ STATIC_DIR=BASE_DIR/"static"
 SECRET_KEY = 'django-insecure-zpb6!!*hmybkvxfsej5qt-cf8u^huykt_-!zlffja(boj1d8!)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['session-management-cookies.vercel.app', 'localhost']
 
