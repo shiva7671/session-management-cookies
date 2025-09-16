@@ -58,7 +58,7 @@ It illustrates core Django concepts like views, cookies, forms, models, and temp
    python manage.py runserver
    ```
 
-6. Open your browser at `http://localhost:8000/home/` to start.
+6. Open your browser at `http://localhost:8000` to start.
 
 ***
 
