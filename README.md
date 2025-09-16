@@ -1,10 +1,6 @@
-Here is a well-structured README file for your Django session cookies project to showcase it on GitHub:
 
-***
 
 # Django Session Cookies Project
-
-![Django](https://img.shields.io/badge[Python](https://img.shields.io/badge[SQLite](https://img.shields.io/badge
 
 This project demonstrates a **multi-step form submission workflow** using Django, where user data (name, age, course) is collected step-by-step using session cookies to maintain state between pages.  
 It illustrates core Django concepts like views, cookies, forms, models, and templates in a clean, beginner-friendly architecture.
