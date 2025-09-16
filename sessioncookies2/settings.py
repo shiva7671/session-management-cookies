@@ -13,9 +13,9 @@ STATIC_DIR=BASE_DIR/"static"
 SECRET_KEY = 'django-insecure-zpb6!!*hmybkvxfsej5qt-cf8u^huykt_-!zlffja(boj1d8!)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['session-management-cookies.vercel.app', 'localhost']
 
 
 # Application definition
@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -108,6 +109,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[STATIC_DIR]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
