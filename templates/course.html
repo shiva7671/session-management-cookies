@@ -1,0 +1,26 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome Django Session Cookies </h1>
+    <h2>Course session</h2>
+    <h3>Hello,{{name}}</h3>
+    <h3>Age:{{age}}</h3>
+    <form method="POST" action="/result/">
+        {% csrf_token %}
+        <p>Enter Your Course</p>
+        <input type="text" name="course" value="">
+        <input type="hidden" name="name" value="{{ name }}">
+        <input type="hidden" name="age" value="{{ age }}">
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
